@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>ใบงานที่ 9 ข้อ 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var ans = confirm("คุณต้องการทดสอบคำสั่ง Loopหรือไม่");
+        if (ans == true) {
+            var line = prompt("ใส่จำนวนรอบ");
+            var star = prompt("ใส่สัญลักษณ์", "*");
+			alert("แสดงคำสั่งLoopแล้ว");
+        } else {
+            alert("คุณต้องการแสดงคำสั่งLoopเงินฝาก");
+        }
+            triangle(line, star);
+            function triangle(line, star) {
+                for (i = 1; i <= line; i++) {
+                    for (j = 1; j <= i; j++) {
+                        document.write(star);
+                    }
+                    document.write("<br>");
+                }
+            }
+    </script>
+</body>
+
+</html>

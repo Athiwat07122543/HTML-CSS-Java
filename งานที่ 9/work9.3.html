@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ใบงานที่ 9 ข้อที่ 3</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var ans = confirm("คุณต้องโชว์เงินฝากหรือไม่");
+		if(ans==true){
+			var mybalance = prompt("กรุณาใส่ยอดเงิน");
+			var balance = Number(mybalance);
+			var myinterset = prompt("กรุณาใส่ดอกเบี้ย % ต่อปี");
+			interest=balance*myinterset/100;
+			iyear = prompt("กรุณาใส่จำนวนปีที่จะฝาก");
+			calculate(balance, interest, iyear);
+			alert("แสดงเงินฝากแล้ว");
+        } else {
+            alert("คุณต้องการไม่แสดงเงินฝาก");
+        }
+			function calculate(balance, interest, iyear) {
+				year=1;
+				while (year<=iyear)
+				{
+					balance+=interest;
+					document.write("Balance year " + year + " = " + balance + " baht");
+					document.write("<br>");
+					year++;
+				}
+			}
+	</script>
+ </body>
+</html>

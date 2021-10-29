@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>ใบงานที่ 7 ข้อที่ 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        balance = 100;
+        interset = balance * 3 / 100;
+		iyear=5;
+        mymoney(balance, interset, iyear);
+		document.write("<hr>");
+        balance = 10000;
+        interset = balance * 5 / 100;
+		iyear=10;
+	    mymoney(balance, interset, iyear);
+        function mymoney(balance, interset, iyear) {
+			year = 1;
+            while (year <= iyear) {
+                balance += interset;
+                document.write("Balance year " + year + " = " + balance + " baht");
+                document.write("<br>");
+                year++; //year=year+1
+            }
+        }
+    </script>
+</body>
+</html>
